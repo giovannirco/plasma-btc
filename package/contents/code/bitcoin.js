@@ -80,6 +80,15 @@ var sources = [
 			return data.ask;
 		}
 	},
+	{
+                name: 'Foxbit',
+                url: 'https://api.blinktrade.com/api/v1/BRL/ticker',
+                homepage: 'https://www.foxbit.exchange/',
+                currency: 'BRL',
+                getRate: function(data) {
+                        return data.last;
+                }
+        },
 ];
 
 var currencyApiUrl = 'http://api.fixer.io';
@@ -96,6 +105,7 @@ var currencySymbols = {
 	'PHP': '₱',  // Philippine Peso
 	'PLN': 'zł', // Polish Zloty
 	'THB': '฿',  // Thai Baht
+	'BRL': 'R$',  // Brazilian Real
 };
 
 function getRate(source, currency, callback) {
