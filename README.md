@@ -56,3 +56,4 @@ Use additional `-g` flag to install plasmoid globally, for all users.
 
 ### 1.0
 Initial release
+# plasma-btc
